@@ -2,7 +2,8 @@
 ## Python implementation of GN algorithm, no external package is needed
 
 The code uses the example graph: 
-```adjacent_dict = {'a':['b','c'], 
+```
+adjacent_dict = {'a':['b','c'], 
                  'b':['a','c','d'],
                  'c':['a','b'],
                  'd':['b','e','f','g'],
