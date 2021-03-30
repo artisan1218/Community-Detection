@@ -9,8 +9,11 @@ The code uses the example graph:
                  'e':['d','f'],
                  'f':['d','e','g'],
                  'g':['d','f']
-}```
+} 
+```
+
 and the vertices list: 
+
 ```vertices_list = ['a','b','c','d','e','f','g']```
 
 
@@ -25,4 +28,5 @@ Key is the edge, value is the betweenness of the edge.
  ('a', 'c'): 1.0,
  ('b', 'c'): 5.0,
  ('f', 'g'): 1.5,
- ('e', 'f'): 1.5}```
+ ('e', 'f'): 1.5}
+ ```
