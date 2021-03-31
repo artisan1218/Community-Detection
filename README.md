@@ -21,7 +21,8 @@ and the vertices list:
 The final result of GN algorithm is shown in the dict below.
 Key is the edge, value is the betweenness of the edge.
 
-```{('d', 'e'): 4.5,
+```
+{('d', 'e'): 4.5,
  ('d', 'f'): 4.0,
  ('d', 'g'): 4.5,
  ('b', 'd'): 12.0,
