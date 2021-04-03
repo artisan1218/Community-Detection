@@ -53,4 +53,7 @@ and the vertices list:
 2. Parameters: 
    1. complete_graph: dict representation of the graph
    2. vertices_list: list representation of all vertices of the graph
-3. Return: list representation of the best communities and the corresponding Q score
+3. Return: list representation of the best communities and corresponding Q score
+   1. best communities: ```[['a', 'b', 'c'], ['d', 'e', 'f', 'g']]```
+   2. Q score: ```0.3641975308641976```
+
