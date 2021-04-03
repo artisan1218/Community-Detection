@@ -1,5 +1,5 @@
-# Community Detection
-## Part I: Girvan Newman algorithm. Python implementation, no external packages are needed.
+# Community Detection - Python implementation, no external packages are needed.
+## Part I: Girvan Newman algorithm. 
 
 The code uses the example graph: 
 ```
