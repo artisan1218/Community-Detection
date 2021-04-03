@@ -1,5 +1,5 @@
-# Girvan-Newman-Algorithm
-## Python implementation of GN algorithm, no external package is needed
+# Community Detection
+## Part I: Girvan Newman algorithm. Python implementation, no external packages are needed.
 
 The code uses the example graph: 
 ```
@@ -32,3 +32,25 @@ Key is the edge, value is the betweenness of the edge.
  ('f', 'g'): 1.5,
  ('e', 'f'): 1.5}
  ```
+ ## Part II: Community detection using Modularity Q
+ The code uses the example graph: 
+```
+complete_graph = {'a':['b','c'], 
+                  'b':['a','c','d'],
+                  'c':['a','b'],
+                  'd':['b','e','f','g'],
+                  'e':['d','f'],
+                  'f':['d','e','g'],
+                  'g':['d','f']
+} 
+```
+
+and the vertices list: 
+
+```vertices_list = ['a','b','c','d','e','f','g']```
+
+1. Function call:  best_community, best_q = community_detection(complete_graph, vertices_list)
+2. Parameters: 
+   1. complete_graph: dict representation of the graph
+   2. vertices_list: list representation of all vertices of the graph
+3. Return: list representation of the best communities and the corresponding Q score
