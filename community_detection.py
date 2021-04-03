@@ -123,10 +123,6 @@ def calculateModularity(partitioned_graph, communities, two_m, A_matrix):
             q += A_matrix.get(tuple(sorted((i,j))), 0) - (ki*kj)/two_m
     return q / two_m
 
-
-# In[9]:
-
-
 def findBestCommunities(complete_graph, vertices_list):
     partitioned_graph = copy.deepcopy(complete_graph)
     two_m = sum([len(complete_graph[node]) for node in complete_graph])
