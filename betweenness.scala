@@ -7,8 +7,8 @@ import scala.collection.mutable._
 object task2 {
   def main(args: Array[String]){
 
-    //Logger.getLogger("org").setLevel(Level.ERROR)
-    //Logger.getLogger("akka").setLevel(Level.ERROR)
+    Logger.getLogger("org").setLevel(Level.ERROR)
+    Logger.getLogger("akka").setLevel(Level.ERROR)
 
     val filter_threshold = args(0).toInt //7
     val input_file_path = args(1)//"C:/Users/11921/OneDrive/FilesTransfer/DSCI 553/Assignments/Assignment4/ub_sample_data.csv"
@@ -31,9 +31,9 @@ object task2 {
     val qualified_user_list = ub_rdd.map(pair=>pair._1).distinct().collect()
     val qualified_user_bus_dict = ub_rdd.collectAsMap()
 
-    //val qualified_user_pairs = generatePairs(qualified_user_list)
-    val qualified_user_pairs:List[(String, String)] = qualified_user_list.combinations(2).toList
+    val qualified_user_pairs = generatePairs(qualified_user_list)
     val user_pairs_rdd = sc.parallelize(qualified_user_pairs)
+      .filter(pair => pair._1 < pair._2)
       .map(pair => checkCoratedBus(pair, qualified_user_bus_dict))
       .filter(pair => pair._2 >= filter_threshold)
       .map(pair => pair._1)
