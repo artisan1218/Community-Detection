@@ -1,4 +1,4 @@
-# Community Detection - Python implementation, no external packages are needed.
+# Community Detection - Python/Scala implementation, no external packages are needed.
 ## Part I: Girvan Newman algorithm. 
 
 The code uses the example graph: 
