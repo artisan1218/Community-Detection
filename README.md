@@ -49,7 +49,7 @@ and the vertices list:
 
 ```vertices_list = ['a','b','c','d','e','f','g']```
 
-1. Function call:  best_community, best_q = community_detection(complete_graph, vertices_list)
+1. Function call:  `best_community, best_q = community_detection(complete_graph, vertices_list)`
 2. Parameters: 
    1. complete_graph: dict representation of the graph
    2. vertices_list: list representation of all vertices of the graph
